@@ -1,3 +1,5 @@
+import {resolve} from 'path';
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -21,7 +23,16 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    // SCSS file in the project
+    '@/assets/scss/main.scss'
   ],
+
+  alias: {
+    'img': resolve(__dirname, './assets/img'),
+    'mp4': resolve(__dirname, './assets/mp4'),
+    'scss': resolve(__dirname, './assets/scss'),
+    'js': resolve(__dirname, './assets/js')
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -34,7 +45,18 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/fontawesome'
   ],
+
+  fontawesome: {
+    component: 'fa',
+    suffix: true,
+    icons: {
+      solid: true,
+      brands: true,
+      regular: true,
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

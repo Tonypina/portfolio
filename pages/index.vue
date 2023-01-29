@@ -1,41 +1,36 @@
 <template>
-  <section class="section">
-    <div class="columns is-mobile">
-      <card
-        title="Free"
-        icon="github"
-      >
-        Open source on <a href="https://github.com/buefy/buefy">
-          GitHub
-        </a>
-      </card>
-
-      <card
-        title="Responsive"
-        icon="cellphone-link"
-      >
-        <b class="has-text-grey">
-          Every
-        </b> component is responsive
-      </card>
-
-      <card
-        title="Modern"
-        icon="alert-decagram"
-      >
-        Built with <a href="https://vuejs.org/">
-          Vue.js
-        </a> and <a href="http://bulma.io/">
-          Bulma
-        </a>
-      </card>
-
-      <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
-      >
-        No other internal dependency
-      </card>
+  <section class="section px-0 pb-0">
+    <div class="hero is-fullheight">
+      <div class="columns">
+        <div id="index-left-hero" class="column is-5">
+          <div class="hero is-fullheight px-6">
+            <div class="hero-body ml-6">
+              <div class="columns is-multiline">
+                <div class="column is-full">
+                  <p class="has-text-gold is-size-5 is-inline">I AM</p>
+                </div>
+                <div class="column is-full">
+                  <p class="has-text-white extra-spacing is-size-1">TONY PIÑA</p>
+                </div>
+                <div class="column is-full">
+                  <p class="has-text-gold is-size-5">COMPUTER ENGINEER</p>
+                </div>
+                <div class="column is-full">
+                  <p class="has-text-white">
+                    I am passionate about computers, coding, cybersecurity, and other topics related to computer science.
+                  </p>
+                </div>
+                <div class="column mt-5">
+                  <b-button type="is-gold" outlined>About me</b-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-7">
+          <img src="~img/profileImage.jpeg" alt="ProfilePhoto">
+        </div>
+      </div>
     </div>
   </section>
 </template>
